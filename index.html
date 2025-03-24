@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heti Album Kihívás</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="root.css">
+    <link rel="shortcut icon" href="pictures/spoti.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#foreign">Külföldi ajánlás</a></li>
+            <li><a href="#hungarian">Magyar ajánlás</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Üdvözlöm a Heti Album Kihíváson!</h1>
+        <h3>Köszöntöm az én zenei edukációs felületemen!</h3>
+        <div class="album" id="foreign">
+            <h2>Külföldi ajánlás: Linkin Park - Minutes to Midnight (2007)</h2>
+            <img src="pictures/linkin.jpg" alt="Hybrid Theory borító">
+            <p>
+                <spam>Stílus:</spam> Alternatív rock, post-grunge, soft rock
+                <br>
+                <spam>Népszerűség:</spam> A banda szakított a nu-metallal, és inkább alternatív rock felé mozdult el.
+                <br>A What
+                I’ve Done
+                és Bleed It Out című számok nagy sikerek lettek.
+                <br>
+                <spam>Értékelés:</spam> Vegyes fogadtatás, mert sok rajongónak hiányzott a régi, keményebb hangzás.
+                Ugyanakkor
+                művészileg érettebb lett.
+                <br>
+                <spam>Személyes kedvenceim:</spam> Kevés kivétellel az összes számot szívesen hallgatom
+            </p>
+            <a href="#" target="_blank" class="spotify">
+                <div class="button-container">
+                    <img class="logo" src="pictures/spoti.png" alt="">
+                    <p>Spotify</p>
+                </div>
+            </a>
+            <a href="#" target="_blank" class="youtube">
+                <div class="button-container">
+                    <img class="logo" src="pictures/youtube.png" alt="">
+                    <p>Youtube</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="album" id="hungarian">
+            <h2>Magyar ajánlás: Tompos Kátya - Holdjárat (2017)</h2>
+            <img src="pictures/holdjarat.jpg" alt="Keresztül Európán borító">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, tenetur et provident facere nobis rerum,
+                fugit magnam laudantium sunt exercitationem enim suscipit commodi! Ea asperiores cum veritatis odit,
+                quibusdam consequatur.</p>
+            <a href="#" target="_blank" class="spotify">
+                <div class="button-container">
+                    <img class="logo" src="pictures/spoti.png" alt="">
+                    <p>Spotify</p>
+                </div>
+            </a>
+            <a href="#" target="_blank" class="youtube">
+                <div class="button-container">
+                    <img class="logo" src="pictures/youtube.png" alt="">
+                    <p>Youtube</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Csukás Ábel</p>
+    </footer>
+    <script>
+        if (window.location.pathname !== '/index.html' || window.location.hash) {
+            window.location.replace('/index.html');
+        }
+    </script>
+</body>
+
+</html>

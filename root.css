@@ -1,0 +1,15 @@
+:root {
+  --background-color: #121212;
+  --foreground-color: #212121;
+  --boxshadow: rgba(0, 0, 0, 0.1);
+  --primary-color: #4CAF50;
+  --text-color: #b3b3b3;
+}
+@font-face {
+    font-family: 'Circular-Black';
+    src: url(fonts/circular-std-medium-500.ttf);
+}
+body{
+    font-family: 'Circular-Black';
+    user-select: none;
+}
