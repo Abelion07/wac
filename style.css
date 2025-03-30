@@ -44,7 +44,7 @@ img {
     box-shadow: 0 0 10px var(--boxshadow);
     transition: .5s all ease;
 }
-.youtube, .spotify, a {
+.youtube, .spotify{
     display: inline-block;
     margin-top: 10px;
     color: var(--background-color);
@@ -106,6 +106,10 @@ nav {
     box-shadow: 0px 0px 10px var(--boxshadow);
     border-radius: 8px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
 }
 
 nav ul {
@@ -127,7 +131,18 @@ nav ul li a {
     transition: .3s;
 }
 
-nav>ul>li>a{
+.headbtn{
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    padding: 10px 25px 10px 25px;
+    margin: 10px;
+    width: 10vw;
+    border-radius: 16px;
+    transition: .5s all ease;
+}
+
+.headbtn:hover{
+    background-color: var(--primary-color);
     color: var(--background-color);
 }
 
@@ -140,7 +155,8 @@ footer {
     text-align: center;
     color: var(--text-color);
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    align-items: center;
 }
 
 spam{
@@ -148,4 +164,26 @@ spam{
     text-decoration: underline;
     font-family: sans-serif;
     font-weight: bold;
+}
+
+.head-title{
+    margin: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head-h1{
+    color: var(--text-color);
+    font-size: 35px;
+    margin: 10px;
+}
+
+.note{
+    width: 35px;
+    margin: 0;
+}
+
+i{
+    user-select: text;
 }

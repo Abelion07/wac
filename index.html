@@ -3,23 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Heti Album Kihívás</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="shortcut icon" href="pictures/spoti.png" type="image/x-icon">
 </head>
 
 <body>
     <nav>
-        <ul>
-            <li><a href="#foreign">Külföldi ajánlás</a></li>
-            <li><a href="#hungarian">Magyar ajánlás</a></li>
+        <div class="head-title">
+            <a href="index.html">
+                <img src="pictures/note.png" class="note">
+            </a>
+            <h1 class="head-h1">Heti Album Kihívás</h1>
+        </div>
+        <ul class="head-btn-container">
+            <li><a href="#foreign" class="headbtn">Külföldi ajánlás</a></li>
+            <li><a href="#hungarian" class="headbtn">Magyar ajánlás</a></li>
         </ul>
     </nav>
     <div class="container">
         <h1>Üdvözlöm a Heti Album Kihíváson!</h1>
-        <h3>Köszöntöm az én zenei edukációs felületemen!</h3>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, doloremque similique libero nihil
+            consequuntur fugit qui soluta nesciunt aliquam esse magnam, vitae numquam eum, ratione deleniti eveniet
+            error illo facilis?</h3>
         <div class="album" id="foreign">
             <h2>Külföldi ajánlás: Linkin Park - Minutes to Midnight (2007)</h2>
             <img src="pictures/linkin.jpg" alt="Hybrid Theory borító">
@@ -72,13 +81,9 @@
         </div>
     </div>
     <footer>
+        <p class="feedback">Visszajelzés: <i>csukasabel-2022-d@totharpadgimnazium.com</i></p>
         <p>&copy; 2025 Csukás Ábel</p>
     </footer>
-    <script>
-        if (window.location.pathname !== '/index.html' || window.location.hash) {
-            window.location.replace('/index.html');
-        }
-    </script>
 </body>
 
 </html>
