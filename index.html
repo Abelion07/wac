@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="root.css">
     <link rel="stylesheet" href="mobile.css">
-    <link rel="shortcut icon" href="pictures/spoti.png" type="image/x-icon">
+    <link rel="shortcut icon" href="pictures/empire_logo.png" type="image/x-icon">
 </head>
 
 <body>
+    <div id="splash">
+        <img src="/pictures/empire_logo.png" alt="Logó">
+    </div>
     <nav>
         <div class="head-title">
             <a href="index.html">
@@ -84,6 +87,17 @@
         <p class="feedback">Visszajelzés: <i>csukasabel-2022-d@totharpadgimnazium.com</i></p>
         <p>&copy; 2025 Csukás Ábel</p>
     </footer>
+
+    <script>
+        setTimeout(() => {
+          const splash = document.getElementById('splash');
+          splash.classList.add('fade-out');
+    
+          setTimeout(() => {
+            splash.style.display = 'none';
+          }, 1000);
+        }, 3000);
+      </script>
 </body>
 
 </html>
